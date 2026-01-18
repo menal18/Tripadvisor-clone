@@ -88,7 +88,7 @@ body{
 .main-section-title{
     
     
-     font-size: 50px;
+     font-size: 3rem;
      font-weight: 800;
 
 }
@@ -124,6 +124,10 @@ body{
 .icons-2{
     height: 25px;
     width: 25px;
+}
+.icons-2d{
+      height: 22px;
+    width: 22px;
 }
 .description__s1:hover{
     border-bottom: solid black 2px;
@@ -230,7 +234,7 @@ opacity: 0.9;
 }
 .card-title{
     
-     font-size: 18px;
+     font-size: 1.125rem;
      font-weight: 500;
 }
 
@@ -458,4 +462,141 @@ opacity: 0.9;
        color: #3b3a3a;
        padding-top: 10px;
         
+}
+
+.menu-bar{
+    display: none;
+}
+.user-logo{
+    display: none;
+}
+
+
+     /*media queries*/
+
+
+@media screen and (max-width: 600px) {
+  /*menu bar*/
+  .menu-bar{
+    display: block;
+    
+  }
+  /* hide element*/
+  .navbar__s2{
+    display: none;
+  }
+
+  .navbar__s3{
+    display: none;
+  }
+  .user-logo{
+    display: block;
+  }
+  .main-section{
+    display: none;
+  }
+  /*general*/
+
+  
+  .description__s1{
+  display:flex;
+  margin-left: 10px;
+
+
+  }
+  .card-container__s2{
+ margin-left: 20px;
+  }
+  /* General */
+    .main-section-title { font-size: 32px; }
+  .para-description { font-size: 16px; }
+
+  /* Navbar */
+  .navbar {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  /* Search bar */
+  .search__container {
+    margin: 30px auto;
+    width: 90%;
+  }
+
+  /* Cards layout */
+  .main-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-card-container {
+    flex-wrap: wrap;
+      display: flex;
+    flex-direction: row;
+  }
+
+  .image-card-container__two,
+  .image-card-container__three {
+    width: 50%;
+    max-width: 340px;
+
+
+ 
+  
+  }
+ .image-card-container__title{
+ position: absolute;
+ top: 170px;
+ }
+  .images {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Big cards */
+  .bg-card,
+  .bg-card__one {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .bg-card-image,
+  .bg-card-image-one {
+    width: 92%;
+    height: auto;
+  }
+
+  .bg-card-content,
+  .bg-card-content-one {
+    position: static;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section__s5 {
+    padding-left: 40px;
+  }
+
+  .link-session {
+    padding-left: 20px;
+  }
+  
+  /* list */
+  .description__s1,.para-description{
+    font-size: 13px;
+  }
+  .search__container{
+      width: 80%;
+  }
+  .card-container__s1{
+    margin-left: 15px;
+  }
 }
